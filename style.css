@@ -25,7 +25,7 @@
   .page-header {
     text-align: center;
   }
-  
+
 }
 
 .todo-list {
@@ -37,7 +37,7 @@
 .task {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .task-row-wrapper {
@@ -138,7 +138,7 @@
 }
 
 .list-point>.input-field[type="text"] {
-  width: 226px
+  width: 226px;
 }
 
 .btn.delete .remove-img {
@@ -158,12 +158,12 @@
 
 /* Edit Task */
 .tasks .list-point .input-field[type=text] {
-  display: none
+  display: none;
 }
 
 .tasks .list-point.edit-mode .input-field[type=text] {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .tasks .list-point.edit-mode .task {
