@@ -5,24 +5,24 @@
   font-family: Lato, sans-serif;
 }
 
-.page-header {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.header-img {
+.header__img {
   width: 100%;
 }
 
-.page-header .more-information {
+.header .header__more-information {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-  .page-header {
+  .header {
     text-align: center;
   }
 
@@ -40,21 +40,21 @@
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.section__task-wrapper {
   display: flex;
 }
 
-.tasks {
+.list {
   margin: 0;
   padding: 0px;
 }
 
-.list-point,
-.section-name {
+.list__point,
+.section__title {
   list-style: none;
 }
 
-.input-field,
+.section__input,
 .btn {
   outline: none;
 }
@@ -74,7 +74,7 @@
 }
 
 /* Heading */
-.section-name {
+.section__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -84,7 +84,7 @@
   text-transform: uppercase;
 }
 
-.input-field[type="text"] {
+.section__input[type="text"] {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -97,23 +97,23 @@
   color: #888;
 }
 
-.input-field[type="text"]:focus {
+.section__input[type="text"]:focus {
   color: #333;
 }
 
 /* New Task */
 
-#list-header{
+.section__first-title{
   display: block;
   margin: 0 0 20px;
 }
 
-#new-task {
+.section__task_new {
   width: 318px;
 }
 
 /* Task list */
-.list-point {
+.list__point {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -122,22 +122,22 @@
   align-items: center;
 }
 
-.list-point>* {
+.list__point>* {
   vertical-align: middle;
 }
 
-.list-point>.input-field[type="checkbox"] {
+.list__point>.section__input[type="checkbox"] {
   margin: 0 10px;
 }
 
-.list-point>.task {
+.list__point>.task {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.list-point>.input-field[type="text"] {
+.list__point>.section__input[type="text"] {
   width: 226px;
 }
 
@@ -158,15 +158,15 @@
 }
 
 /* Edit Task */
-.tasks .list-point .input-field[type=text] {
+.list .list__point .section__input[type=text] {
   display: none;
 }
 
-.tasks .list-point.edit-mode .input-field[type=text] {
+.list .list__point_edit-mode .section__input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-.tasks .list-point.edit-mode .task {
+.list .list__point_edit-mode .task {
   display: none;
 }
